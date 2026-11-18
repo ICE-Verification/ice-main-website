@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العضويات (مدربين - مراكز - وكلاء) | كلية ريادة الأعمال الدولية (I.C.E)</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+            color: #1e293b;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .bg-royal-navy {
+            background-color: #1e3a8a;
+        }
+        .bg-royal-navy-dark {
+            background-color: #112255;
+        }
+        .text-royal-navy {
+            color: #1e3a8a;
+        }
+        /* Metallic Gold Sheen */
+        .metallic-gold-bg {
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #D4AF37 50%, #FBF5B7 75%, #AA771C 100%);
+            background-size: 200% auto;
+            color: #112255;
+            transition: all 0.4s ease;
+        }
+        .metallic-gold-bg:hover {
+            background-position: right center;
+            box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.5);
+            transform: translateY(-2px);
+        }
+        .metallic-gold-text {
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #D4AF37 50%, #FBF5B7 75%, #AA771C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+        .gold-top-card {
+            border-top: 4px solid #D4AF37;
+            background: linear-gradient(180deg, #fdfbfb 0%, #ebedee 100%);
+        }
+        .nav-link-active {
+            border-bottom: 3px solid #D4AF37;
+            color: #FCF6BA !important;
+            font-weight: 800;
+        }
+        .nowrap-phrase {
+            white-space: nowrap;
+            display: inline-block;
+        }
+        .seamless-iframe {
+            width: 100%;
+            min-height: 920px;
+            border: none;
+            background: transparent;
+        }
+        /* Multi-level Dropdown Styling */
+        .dropdown:hover > .dropdown-menu {
+            display: block;
+        }
+        .sub-dropdown:hover > .sub-dropdown-menu {
+            display: block;
+        }
+        @media print {
+            .no-print { display: none !important; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="bg-royal-navy text-white sticky top-0 z-50 shadow-xl border-b-2 border-amber-500/40 no-print">
+    <!-- Top Legal Bar (No MERSİS, No كلمة تجاري - only ترخيص) -->
+    <div class="bg-royal-navy-dark text-[11px] sm:text-xs py-2 px-4 border-b border-blue-900">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-3 text-slate-300">
+                <span><i class="fa-solid fa-building-columns text-amber-400 ml-1"></i> إسطنبول، تركيا | ترخيص: <strong class="text-white">368979-5</strong></span>
+            </div>
+            <div class="text-slate-300 text-[11px]">
+                رئيس مجلس الأمناء: <strong class="text-amber-300">الاستشاري الدكتور شجاع الفهد</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center gap-3">
+        <!-- 3-Line Identity Block in ONE single uniform color -->
+        <a href="index.html" class="flex items-center gap-3 shrink-0">
+            <img src="logo.png" alt="شعار كلية ريادة الأعمال الدولية" class="w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg border-2 border-amber-400/80 object-contain bg-white p-0.5 shrink-0">
+            <div class="flex flex-col leading-tight text-white">
+                <span class="text-sm sm:text-base md:text-lg font-black nowrap-phrase">كلية ريادة الأعمال الدولية</span>
+                <span class="text-[10px] sm:text-xs font-bold tracking-wide nowrap-phrase" dir="ltr">International College of Entrepreneurship</span>
+                <span class="text-[10px] sm:text-xs font-black tracking-widest nowrap-phrase" dir="ltr">I.C.E</span>
+            </div>
+        </a>
+
+        <!-- Desktop Navigation (Single Verification Tab inside Main Nav, No duplicate buttons/shortcuts) -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+            <a href="index.html" class="px-2.5 py-2 text-xs xl:text-sm whitespace-nowrap transition text-slate-200 hover:text-amber-300">الرئيسية</a>
+            <a href="about.html" class="px-2.5 py-2 text-xs xl:text-sm whitespace-nowrap transition text-slate-200 hover:text-amber-300">عن الكلية</a>
+
+            <!-- تبويب العضويات المتفرع (مدربين [مدرب معتمد - مدرب خبير - مدرب استشاري] - مراكز - وكلاء [مدينة - دولة]) -->
+            <div class="relative dropdown">
+                <a href="memberships.html" class="px-2.5 py-2 text-xs xl:text-sm whitespace-nowrap transition flex items-center gap-1 nav-link-active">
+                    العضويات <i class="fa-solid fa-chevron-down text-[10px] text-amber-300"></i>
+                </a>
+                <div class="dropdown-menu hidden absolute right-0 top-full pt-2 w-60 z-50">
+                    <div class="bg-royal-navy-dark border border-amber-400/50 rounded-xl shadow-2xl py-2 text-xs text-white">
+                        <!-- الفرع الأول: مدربين (يتفرع منه 3 مستويات) -->
+                        <div class="relative sub-dropdown">
+                            <a href="memberships.html#trainers" class="flex justify-between items-center px-4 py-2.5 hover:bg-blue-900 hover:text-amber-300 font-bold border-b border-blue-900/60">
+                                <span><i class="fa-solid fa-chalkboard-user text-amber-400 ml-2"></i> مدربين</span>
+                                <i class="fa-solid fa-angle-left text-amber-400"></i>
+                            </a>
+                            <div class="sub-dropdown-menu hidden absolute right-full top-0 pr-1 w-52">
+                                <div class="bg-royal-navy-dark border border-amber-400/50 rounded-xl shadow-2xl py-2 text-xs text-white">
+                                    <a href="memberships.html#trainer-certified" class="block px-4 py-2 hover:bg-blue-900 hover:text-amber-300 border-b border-blue-900/50">• مدرب معتمد</a>
+                                    <a href="memberships.html#trainer-expert" class="block px-4 py-2 hover:bg-blue-900 hover:text-amber-300 border-b border-blue-900/50">• مدرب خبير</a>
+                                    <a href="memberships.html#trainer-consultant" class="block px-4 py-2 hover:bg-blue-900 hover:text-amber-300">• مدرب استشاري</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- الفرع الثاني: مراكز -->
+                        <a href="memberships.html#centers" class="block px-4 py-2.5 hover:bg-blue-900 hover:text-amber-300 font-bold border-b border-blue-900/60">
+                            <i class="fa-solid fa-building-columns text-amber-400 ml-2"></i> مراكز
+                        </a>
+
+                        <!-- الفرع الثالث: وكلاء (يتفرع منه مدينة - دولة) -->
+                        <div class="relative sub-dropdown">
+                            <a href="memberships.html#agents" class="flex justify-between items-center px-4 py-2.5 hover:bg-blue-900 hover:text-amber-300 font-bold">
+                                <span><i class="fa-solid fa-handshake text-amber-400 ml-2"></i> وكلاء</span>
+                                <i class="fa-solid fa-angle-left text-amber-400"></i>
+                            </a>
+                            <div class="sub-dropdown-menu hidden absolute right-full top-0 pr-1 w-48">
+                                <div class="bg-royal-navy-dark border border-amber-400/50 rounded-xl shadow-2xl py-2 text-xs text-white">
+                                    <a href="memberships.html#agent-city" class="block px-4 py-2 hover:bg-blue-900 hover:text-amber-300 border-b border-blue-900/50">• مدينة</a>
+                                    <a href="memberships.html#agent-country" class="block px-4 py-2 hover:bg-blue-900 hover:text-amber-300">• دولة</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="programs.html" class="px-2.5 py-2 text-xs xl:text-sm whitespace-nowrap transition text-slate-200 hover:text-amber-300">البرامج التدريبية</a>
+            <a href="initiatives.html" class="px-2.5 py-2 text-xs xl:text-sm whitespace-nowrap transition text-slate-200 hover:text-amber-300">المبادرات</a>
+            <a href="honors.html" class="px-2.5 py-2 text-xs xl:text-sm whitespace-nowrap transition text-slate-200 hover:text-amber-300">التكريمات</a>
+            <!-- تبويب التحقق الوحيد في الموقع -->
+            <a href="verify.html" class="px-2.5 py-2 text-xs xl:text-sm whitespace-nowrap transition font-bold text-amber-300 hover:text-amber-200 text-slate-200 hover:text-amber-300">التحقق من الشهادات أو الاعتمادات</a>
+            <a href="contact.html" class="px-2.5 py-2 text-xs xl:text-sm whitespace-nowrap transition text-slate-200 hover:text-amber-300">تواصل معنا</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="lg:hidden text-amber-300 text-2xl focus:outline-none">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu (Reflects full hierarchy cleanly) -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-royal-navy-dark px-4 pt-2 pb-5 space-y-2 border-t border-blue-800 text-sm">
+        <a href="index.html" class="block py-2 text-white border-b border-blue-900">الرئيسية</a>
+        <a href="about.html" class="block py-2 text-white border-b border-blue-900">عن الكلية</a>
+        
+        <!-- Mobile Memberships Accordion -->
+        <div class="border-b border-blue-900 pb-2">
+            <button onclick="document.getElementById('mobMembSub').classList.toggle('hidden')" class="w-full flex justify-between items-center py-2 text-amber-300 font-bold">
+                <span>العضويات</span>
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+            </button>
+            <div id="mobMembSub" class="hidden pr-4 space-y-2 text-xs text-slate-200 pt-1">
+                <div class="font-bold text-amber-200">1. مدربين:</div>
+                <div class="pr-4 space-y-1.5 border-r border-amber-400/40">
+                    <a href="memberships.html#trainer-certified" class="block py-1 hover:text-amber-300">- مدرب معتمد</a>
+                    <a href="memberships.html#trainer-expert" class="block py-1 hover:text-amber-300">- مدرب خبير</a>
+                    <a href="memberships.html#trainer-consultant" class="block py-1 hover:text-amber-300">- مدرب استشاري</a>
+                </div>
+                <a href="memberships.html#centers" class="block py-1 font-bold text-amber-200">2. مراكز</a>
+                <div class="font-bold text-amber-200">3. وكلاء:</div>
+                <div class="pr-4 space-y-1.5 border-r border-amber-400/40">
+                    <a href="memberships.html#agent-city" class="block py-1 hover:text-amber-300">- مدينة</a>
+                    <a href="memberships.html#agent-country" class="block py-1 hover:text-amber-300">- دولة</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="programs.html" class="block py-2 text-white border-b border-blue-900">البرامج التدريبية</a>
+        <a href="initiatives.html" class="block py-2 text-white border-b border-blue-900">المبادرات</a>
+        <a href="honors.html" class="block py-2 text-white border-b border-blue-900">التكريمات</a>
+        <a href="verify.html" class="block py-2 text-amber-300 font-bold border-b border-blue-900">التحقق من الشهادات أو الاعتمادات</a>
+        <a href="contact.html" class="block py-2 text-white">تواصل معنا</a>
+    </div>
+</header>
+
+
+<section class="bg-royal-navy text-white py-12 border-b-4 border-amber-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-2xl sm:text-4xl font-black mb-2">نظام العضويات الدولية</h1>
+        <p class="text-slate-300 text-sm max-w-3xl">
+            تمنح <span class="nowrap-phrase font-bold text-white">كلية ريادة الأعمال الدولية</span> عضويات مهنية ومؤسسية مصنفة وفق المعايير الدولية لكل من المدربين، المراكز التدريبية، والوكلاء.
+        </p>
+        <!-- Quick Anchor Navigation within Memberships Page -->
+        <div class="flex flex-wrap gap-3 mt-6 text-xs font-bold">
+            <a href="#trainers" class="metallic-gold-bg px-4 py-2 rounded-lg">1. عضويات المدربين</a>
+            <a href="#centers" class="bg-blue-950 hover:bg-blue-900 border border-amber-400/50 text-white px-4 py-2 rounded-lg">2. عضوية المراكز</a>
+            <a href="#agents" class="bg-blue-950 hover:bg-blue-900 border border-amber-400/50 text-white px-4 py-2 rounded-lg">3. نظام الوكلاء (مدينة / دولة)</a>
+        </div>
+    </div>
+</section>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+    <!-- 1. قسم المدربين (يتفرع منه: مدرب معتمد - مدرب خبير - مدرب استشاري) -->
+    <section id="trainers" class="space-y-8">
+        <div class="border-b-2 border-slate-300 pb-3">
+            <span class="text-xs font-black text-amber-700">التصنيف الأول</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-royal-navy">أولاً: عضويات المدربين</h2>
+            <p class="text-sm text-slate-600 mt-1">تنقسم عضوية المدربين في الكلية إلى ثلاث درجات مهنية تصاعدية حسب الخبرة والمؤهلات التدريبية:</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- 1.1 مدرب معتمد -->
+            <div id="trainer-certified" class="gold-top-card rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-blue-100 text-royal-navy text-xs font-black px-3 py-1 rounded-full">الدرجة الأولى</span>
+                        <i class="fa-solid fa-chalkboard-user text-2xl text-royal-navy"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-royal-navy">مدرب معتمد<br><span class="text-xs font-bold text-slate-500" dir="ltr">Certified Trainer</span></h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        مخصصة للمدربين الحاصلين على شهادة إعداد مدربين (TOT) أو خبرة تدريبية تأسيسية، والراغبين في اعتماد برامجهم التدريبية رسمياً.
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 border-t border-slate-200 pt-3">
+                        <li><i class="fa-solid fa-check text-amber-600 ml-1"></i> شهادة وبطاقة "مدرب معتمد" برقم تسلسلي خاص.</li>
+                        <li><i class="fa-solid fa-check text-amber-600 ml-1"></i> حق طلب إصدار شهادات للمتدربين في دوراته التخصصية.</li>
+                        <li><i class="fa-solid fa-check text-amber-600 ml-1"></i> إدراج الاسم في سجل المدربين المعتمدين بالكلية.</li>
+                    </ul>
+                </div>
+                <div class="pt-6">
+                    <a href="contact.html?subject=طلب عضوية: مدرب معتمد" class="block w-full bg-royal-navy hover:bg-blue-800 text-white text-center py-2.5 rounded-xl font-bold text-xs transition">
+                        تقدم لعضوية مدرب معتمد
+                    </a>
+                </div>
+            </div>
+
+            <!-- 1.2 مدرب خبير -->
+            <div id="trainer-expert" class="bg-royal-navy text-white rounded-2xl shadow-2xl p-6 border-2 border-amber-400 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="metallic-gold-bg text-xs font-black px-3 py-1 rounded-full">الدرجة الثانية</span>
+                        <i class="fa-solid fa-award text-2xl text-amber-300"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-white">مدرب خبير<br><span class="text-xs font-bold text-amber-300" dir="ltr">Expert Trainer</span></h3>
+                    <p class="text-xs text-slate-200 leading-relaxed">
+                        تُمنح للمدربين ذوي الخبرة الميدانية الواسعة والسجل التدريبي الحافل بالبرامج والحقائب التدريبية المتخصصة.
+                    </p>
+                    <ul class="text-xs text-slate-200 space-y-2 border-t border-blue-800 pt-3">
+                        <li><i class="fa-solid fa-check text-amber-400 ml-1"></i> شهادة وبطاقة "مدرب خبير" وختم اعتماد خاص.</li>
+                        <li><i class="fa-solid fa-check text-amber-400 ml-1"></i> اعتماد حقائبه التدريبية وتوثيق ملكيتها الفكرية.</li>
+                        <li><i class="fa-solid fa-check text-amber-400 ml-1"></i> إمكانية تقديم برامج الدبلوم بالتعاون مع الكلية.</li>
+                    </ul>
+                </div>
+                <div class="pt-6">
+                    <a href="contact.html?subject=طلب عضوية: مدرب خبير" class="block w-full metallic-gold-bg text-center py-2.5 rounded-xl font-black text-xs shadow">
+                        تقدم لعضوية مدرب خبير
+                    </a>
+                </div>
+            </div>
+
+            <!-- 1.3 مدرب استشاري -->
+            <div id="trainer-consultant" class="gold-top-card rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-amber-100 text-amber-900 text-xs font-black px-3 py-1 rounded-full">الدرجة العليا</span>
+                        <i class="fa-solid fa-crown text-2xl text-amber-600"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-royal-navy">مدرب استشاري<br><span class="text-xs font-bold text-slate-500" dir="ltr">Consultant Trainer</span></h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        أعلى درجات عضوية المدربين، مخصصة للخبراء والاستشاريين وأصحاب المؤلفات والأبحاث والقيادات التدريبية.
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 border-t border-slate-200 pt-3">
+                        <li><i class="fa-solid fa-check text-amber-600 ml-1"></i> لقب وبطاقة "مدرب استشاري" معتمد دولياً.</li>
+                        <li><i class="fa-solid fa-check text-amber-600 ml-1"></i> المشاركة في اللجان العلمية وتحكيم الحقائب التدريبية.</li>
+                        <li><i class="fa-solid fa-check text-amber-600 ml-1"></i> أولوية الترشح للمؤتمرات والملتقيات الدولية للكلية.</li>
+                    </ul>
+                </div>
+                <div class="pt-6">
+                    <a href="contact.html?subject=طلب عضوية: مدرب استشاري" class="block w-full bg-royal-navy hover:bg-blue-800 text-white text-center py-2.5 rounded-xl font-bold text-xs transition">
+                        تقدم لعضوية مدرب استشاري
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. قسم المراكز -->
+    <section id="centers" class="bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-amber-500 grid grid-cols-1 lg:grid-cols-12">
+        <div class="lg:col-span-4 bg-royal-navy text-white p-8 flex flex-col justify-center">
+            <span class="text-xs font-bold text-amber-300 mb-2">التصنيف الثاني</span>
+            <h2 class="text-2xl font-black mb-3">ثانياً: عضوية واعتماد المراكز</h2>
+            <p class="text-xs text-slate-300 leading-relaxed">
+                انضمام المعاهد والمراكز التدريبية والأكاديميات إلى شبكة المراكز المعتمدة لدى <span class="nowrap-phrase font-bold text-white">كلية ريادة الأعمال الدولية</span>.
+            </p>
+        </div>
+        <div class="lg:col-span-8 p-8 space-y-4">
+            <h3 class="text-lg font-black text-royal-navy">مزايا عضوية المراكز التدريبية:</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <i class="fa-solid fa-certificate text-amber-600 ml-2"></i>
+                    <strong>شهادة عضوية واعتماد مركز:</strong> تمنح المركز صفة "مركز تدريبي معتمد" برقم تسجيل رسمي.
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <i class="fa-solid fa-file-signature text-amber-600 ml-2"></i>
+                    <strong>إصدار شهادات للمتدربين:</strong> حق طلب إصدار شهادات دولية لطلاب المركز لبرامجه المعتمدة.
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <i class="fa-solid fa-book-bookmark text-amber-600 ml-2"></i>
+                    <strong>اعتماد البرامج والحقائب:</strong> مراجعة واعتماد خطط وبرامج المركز التدريبية وفق معايير الجودة.
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <i class="fa-solid fa-globe text-amber-600 ml-2"></i>
+                    <strong>التوثيق في سجل الشركاء:</strong> إدراج اسم المركز وبيانات اعتماده في السجل الإلكتروني للكلية.
+                </div>
+            </div>
+            <div class="pt-3">
+                <a href="contact.html?subject=طلب عضوية واعتماد مركز تدريبي" class="inline-block metallic-gold-bg px-6 py-3 rounded-xl font-black text-xs sm:text-sm shadow">
+                    تقدم بطلب عضوية مركز تدريبي
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. قسم الوكلاء (يتفرع منه: مدينة - دولة) -->
+    <section id="agents" class="space-y-8">
+        <div class="border-b-2 border-slate-300 pb-3">
+            <span class="text-xs font-black text-amber-700">التصنيف الثالث</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-royal-navy">ثالثاً: نظام الوكلاء (مدينة - دولة)</h2>
+            <p class="text-sm text-slate-600 mt-1">تمنح الكلية حق التمثيل الرسمي والوكالة للمؤسسات المؤهلة وفق نطاقين جغرافيين:</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- 3.1 وكيل مدينة -->
+            <div id="agent-city" class="gold-top-card rounded-2xl shadow-lg p-8 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-blue-100 text-royal-navy text-xs font-black px-3 py-1 rounded-full">نطاق محلي</span>
+                        <i class="fa-solid fa-city text-2xl text-royal-navy"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-royal-navy">وكيل مدينة<br><span class="text-xs font-bold text-slate-500" dir="ltr">City Agent</span></h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        تمثيل الكلية على مستوى مدينة محددة، وتنظيم الدورات الحضورية واستقطاب المتدربين والمدربين ضمن نطاق المدينة.
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 border-t border-slate-200 pt-3">
+                        <li><i class="fa-solid fa-check text-amber-600 ml-1"></i> شهادة وكالة رسمية محددة باسم المدينة والدولة.</li>
+                        <li><i class="fa-solid fa-check text-amber-600 ml-1"></i> خصومات خاصة على رسوم الشهادات والبرامج التدريبية.</li>
+                        <li><i class="fa-solid fa-check text-amber-600 ml-1"></i> إدراج الوكيل في سجل الوكلاء المعتمدين للكلية.</li>
+                    </ul>
+                </div>
+                <div class="pt-6">
+                    <a href="contact.html?subject=طلب وكالة: وكيل مدينة" class="block w-full bg-royal-navy hover:bg-blue-800 text-white text-center py-3 rounded-xl font-bold text-xs sm:text-sm transition">
+                        طلب الحصول على وكالة مدينة
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3.2 وكيل دولة -->
+            <div id="agent-country" class="bg-royal-navy text-white rounded-2xl shadow-2xl p-8 border-2 border-amber-400 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="metallic-gold-bg text-xs font-black px-3 py-1 rounded-full">نطاق وطني شامل</span>
+                        <i class="fa-solid fa-earth-americas text-2xl text-amber-300"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-white">وكيل دولة<br><span class="text-xs font-bold text-amber-300" dir="ltr">Country Agent</span></h3>
+                    <p class="text-sm text-slate-200 leading-relaxed">
+                        تمثيل الكلية على مستوى الدولة بالكامل، والإشراف على تسجيل المدربين والمراكز الفرعية وتنفيذ البرامج والمبادرات في الدولة.
+                    </p>
+                    <ul class="text-xs text-slate-200 space-y-2 border-t border-blue-800 pt-3">
+                        <li><i class="fa-solid fa-check text-amber-400 ml-1"></i> وثيقة تمثيل ووكالة معتمدة على مستوى الدولة.</li>
+                        <li><i class="fa-solid fa-check text-amber-400 ml-1"></i> صلاحية ترشيح المدربين والمراكز للاعتماد في الدولة.</li>
+                        <li><i class="fa-solid fa-check text-amber-400 ml-1"></i> أعلى نسبة امتيازات مالية وإدارية وتنسيق مباشر مع الإدارة العليا.</li>
+                    </ul>
+                </div>
+                <div class="pt-6">
+                    <a href="contact.html?subject=طلب وكالة: وكيل دولة" class="block w-full metallic-gold-bg text-center py-3 rounded-xl font-black text-xs sm:text-sm shadow">
+                        طلب الحصول على وكالة دولة
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="bg-royal-navy-dark text-slate-300 mt-auto border-t-4 border-amber-500 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Col 1: 3-Line Identity Block in ONE single uniform color -->
+        <div>
+            <div class="flex items-center gap-3 mb-4">
+                <img src="logo.png" alt="شعار كلية ريادة الأعمال الدولية" class="w-12 h-12 rounded-full border border-amber-400 bg-white p-0.5 shrink-0">
+                <div class="flex flex-col leading-tight text-white">
+                    <span class="font-black text-sm nowrap-phrase">كلية ريادة الأعمال الدولية</span>
+                    <span class="text-[10px] font-bold nowrap-phrase" dir="ltr">International College of Entrepreneurship</span>
+                    <span class="text-[11px] font-black tracking-widest nowrap-phrase" dir="ltr">I.C.E</span>
+                </div>
+            </div>
+            <p class="text-xs leading-relaxed text-slate-400 mb-4">
+                مؤسسة تعليمية وتدريبية دولية مرخصة رسمياً في إسطنبول - الجمهورية التركية، تُعنى ببرامج التدريب القيادي، العضويات المهنية، المبادرات، والتكريمات.
+            </p>
+            <div class="text-xs bg-blue-950/70 p-3 rounded-lg border border-blue-800 space-y-1">
+                <div class="text-amber-300 font-bold">البيانات الرسمية:</div>
+                <div>ENTREPRENEURSHIP COLLEGE INT EĞİTİM HİZMETLERİ LİMİTED ŞİRKETİ</div>
+                <div>ترخيص: <strong class="text-white">368979-5</strong></div>
+                <div>الرمز المهني NACE: <strong class="text-white">85.60.02</strong></div>
+            </div>
+        </div>
+        <!-- Col 2: Main Tabs (No duplicate verification links) -->
+        <div>
+            <h4 class="text-white font-bold text-base mb-4 border-r-4 border-amber-400 pr-3">أقسام الموقع</h4>
+            <ul class="space-y-2 text-sm">
+                <li><a href="index.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> الرئيسية</a></li>
+                <li><a href="about.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> عن الكلية</a></li>
+                <li><a href="memberships.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> العضويات (مدربين - مراكز - وكلاء)</a></li>
+                <li><a href="programs.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> البرامج التدريبية</a></li>
+                <li><a href="initiatives.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> المبادرات</a></li>
+                <li><a href="honors.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> التكريمات</a></li>
+                <li><a href="contact.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> تواصل معنا</a></li>
+            </ul>
+        </div>
+        <!-- Col 3: Memberships Hierarchy -->
+        <div>
+            <h4 class="text-white font-bold text-base mb-4 border-r-4 border-amber-400 pr-3">تصنيفات العضويات</h4>
+            <ul class="space-y-2 text-sm">
+                <li><a href="memberships.html#trainer-certified" class="hover:text-amber-300 transition">مدرب معتمد</a></li>
+                <li><a href="memberships.html#trainer-expert" class="hover:text-amber-300 transition">مدرب خبير</a></li>
+                <li><a href="memberships.html#trainer-consultant" class="hover:text-amber-300 transition">مدرب استشاري</a></li>
+                <li><a href="memberships.html#centers" class="hover:text-amber-300 transition">اعتماد المراكز التدريبية</a></li>
+                <li><a href="memberships.html#agent-city" class="hover:text-amber-300 transition">وكيل مدينة</a></li>
+                <li><a href="memberships.html#agent-country" class="hover:text-amber-300 transition">وكيل دولة</a></li>
+            </ul>
+        </div>
+        <!-- Col 4: Leadership & Contact -->
+        <div>
+            <h4 class="text-white font-bold text-base mb-4 border-r-4 border-amber-400 pr-3">القيادة والتواصل</h4>
+            <p class="text-sm mb-3">رئيس مجلس الأمناء:<br><span class="metallic-gold-text text-base">الاستشاري الدكتور شجاع الفهد</span></p>
+            <p class="text-xs text-slate-400 mb-3">الشريك الاستراتيجي:<br><strong class="text-white">المنصة العربية للتدريب والاستشارات (ARABPTC)</strong></p>
+            <div class="space-y-2 text-xs text-slate-300">
+                <div><i class="fa-solid fa-location-dot text-amber-400 ml-2"></i> إسطنبول، الجمهورية التركية</div>
+                <div><i class="fa-solid fa-phone text-amber-400 ml-2"></i> <span dir="ltr">+90 850 242 57 10</span></div>
+                <div><i class="fa-brands fa-whatsapp text-amber-400 ml-2"></i> <span dir="ltr">+90 537 048 57 10</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black/40 py-4 text-center text-xs text-slate-400 border-t border-blue-900/50">
+        جميع الحقوق محفوظة © 2026 كلية ريادة الأعمال الدولية | International College of Entrepreneurship | I.C.E
+    </div>
+</footer>
+</html>
+
+</body>
