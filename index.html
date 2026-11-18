@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الرئيسية | كلية ريادة الأعمال الدولية (I.C.E) - إسطنبول</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -44,9 +45,6 @@
             -webkit-text-fill-color: transparent;
             font-weight: 800;
         }
-        .metallic-gold-border {
-            border-image: linear-gradient(135deg, #BF953F, #FCF6BA, #D4AF37, #AA771C) 1;
-        }
         .gold-top-card {
             border-top: 4px solid #D4AF37;
             background: linear-gradient(180deg, #fdfbfb 0%, #ebedee 100%);
@@ -55,6 +53,20 @@
             border-bottom: 3px solid #D4AF37;
             color: #FCF6BA !important;
             font-weight: 700;
+        }
+        /* Strict rule: keep 'ريادة الأعمال الدولية' or full name on a single line across all screens */
+        .nowrap-phrase {
+            white-space: nowrap;
+            display: inline-block;
+        }
+        .hero-title-spacing {
+            line-height: 1.65 !important;
+        }
+        .seamless-iframe {
+            width: 100%;
+            min-height: 920px;
+            border: none;
+            background: transparent;
         }
         @media print {
             .no-print { display: none !important; }
@@ -82,27 +94,25 @@
         </div>
     </div>
     <!-- Main Navigation -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <a href="index.html" class="flex items-center gap-3 group">
-            <div class="w-12 h-12 rounded-xl metallic-gold-bg flex items-center justify-center shadow-lg font-black text-xl text-royal-navy">
-                I.C.E
-            </div>
-            <div class="leading-tight">
-                <div class="text-lg md:text-xl font-black tracking-wide text-white">كلية ريادة الأعمال</div>
-                <div class="text-xs md:text-sm metallic-gold-text font-bold">الدولية - إسطنبول | I.C.E</div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center gap-4">
+        <a href="index.html" class="flex items-center gap-3 group shrink-0">
+            <img src="logo.png" alt="شعار كلية ريادة الأعمال الدولية" class="w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg border-2 border-amber-400/80 object-contain bg-white p-0.5">
+            <div>
+                <div class="text-xs sm:text-sm text-slate-200 font-bold leading-snug">كلية</div>
+                <div class="text-sm sm:text-lg metallic-gold-text font-black nowrap-phrase leading-snug">ريادة الأعمال الدولية</div>
             </div>
         </a>
-        <nav class="hidden lg:flex items-center gap-2">
-            <a href="index.html" class="px-3 py-2 text-sm lg:text-base transition nav-link-active">الرئيسية</a>
-<a href="about.html" class="px-3 py-2 text-sm lg:text-base transition text-slate-200 hover:text-amber-300">عن الكلية والحوكمة</a>
-<a href="programs.html" class="px-3 py-2 text-sm lg:text-base transition text-slate-200 hover:text-amber-300">الدبلومات والبرامج</a>
-<a href="initiatives.html" class="px-3 py-2 text-sm lg:text-base transition text-slate-200 hover:text-amber-300">مبادرة سفراء الوعي</a>
-<a href="verify.html" class="px-3 py-2 text-sm lg:text-base transition text-slate-200 hover:text-amber-300">بوابة التحقق والشهادات</a>
-<a href="contact.html" class="px-3 py-2 text-sm lg:text-base transition text-slate-200 hover:text-amber-300">تواصل معنا</a>
+        <nav class="hidden lg:flex items-center gap-1">
+            <a href="index.html" class="px-2.5 py-2 text-sm lg:text-base whitespace-nowrap transition nav-link-active">الرئيسية</a>
+<a href="about.html" class="px-2.5 py-2 text-sm lg:text-base whitespace-nowrap transition text-slate-200 hover:text-amber-300">عن الكلية والحوكمة</a>
+<a href="programs.html" class="px-2.5 py-2 text-sm lg:text-base whitespace-nowrap transition text-slate-200 hover:text-amber-300">الدبلومات والبرامج</a>
+<a href="initiatives.html" class="px-2.5 py-2 text-sm lg:text-base whitespace-nowrap transition text-slate-200 hover:text-amber-300">مبادرة سفراء الوعي</a>
+<a href="verify.html" class="px-2.5 py-2 text-sm lg:text-base whitespace-nowrap transition text-slate-200 hover:text-amber-300">بوابة التحقق والشهادات</a>
+<a href="contact.html" class="px-2.5 py-2 text-sm lg:text-base whitespace-nowrap transition text-slate-200 hover:text-amber-300">تواصل معنا</a>
 
         </nav>
-        <div class="hidden sm:flex items-center gap-3">
-            <a href="verify.html" class="metallic-gold-bg px-4 py-2 rounded-lg font-extrabold text-sm shadow-md flex items-center gap-2">
+        <div class="hidden sm:flex items-center gap-3 shrink-0">
+            <a href="verify.html" class="metallic-gold-bg px-4 py-2 rounded-lg font-extrabold text-sm shadow-md flex items-center gap-2 whitespace-nowrap">
                 <i class="fa-solid fa-shield-halved"></i> بوابة التحقق
             </a>
         </div>
@@ -130,11 +140,16 @@
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-950 border border-amber-400/50 text-amber-300 text-xs font-bold">
                 <i class="fa-solid fa-award"></i> صرح أكاديمي دولي مرخص رسمياً في إسطنبول - رقم السجل: 368979-5
             </div>
-            <h1 class="text-3xl sm:text-5xl font-black leading-tight">
-                نصنع قادة المستقبل في<br>
-                <span class="metallic-gold-text">كلية ريادة الأعمال الدولية</span>
+            <!-- Clear vertical gap between the two lines + strict single-line nowrap on the college name -->
+            <h1 class="font-black">
+                <span class="block text-2xl sm:text-4xl lg:text-5xl text-white mb-4 sm:mb-6 leading-relaxed">
+                    نصنع قادة المستقبل في
+                </span>
+                <span class="block text-2xl sm:text-4xl lg:text-5xl metallic-gold-text nowrap-phrase py-1">
+                    كلية ريادة الأعمال الدولية
+                </span>
             </h1>
-            <p class="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl">
+            <p class="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl pt-2">
                 بإشراف رئيس مجلس الأمناء <span class="metallic-gold-text font-bold">الاستشاري الدكتور شجاع الفهد</span>، نقدم برامج دبلوم مهنية متقدمة تجمع بين التأصيل العلمي والتطبيق العملي، مع نظام توثيق وتحقق رقمي دولي لكافة الشهادات والشراكات.
             </p>
             <div class="flex flex-wrap gap-4 pt-2">
@@ -153,28 +168,19 @@
                     <h3 class="font-black text-lg text-royal-navy"><i class="fa-solid fa-shield-check text-amber-600 ml-2"></i> نافذة التحقق السريع</h3>
                     <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">متصل بقاعدة البيانات</span>
                 </div>
-                <p class="text-xs text-slate-600 mb-4">أدخل الرقم المرجعي للشهادة أو كود الشريك للانتقال المباشر إلى صفحة التوثيق الرسمية:</p>
+                <p class="text-xs text-slate-600 mb-4">اختر القسم للانتقال المباشر إلى بوابة التوثيق الرسمية المعتمدة:</p>
                 <form action="verify.html" method="get" class="space-y-4">
                     <div>
-                        <label class="block text-xs font-bold text-slate-700 mb-1">نوع الوثيقة:</label>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">نوع الوثيقة المطلوب التحقق منها:</label>
                         <select name="tab" class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:outline-none focus:border-blue-800">
-                            <option value="certificates">شهادة خريج / دبلوم تدريبي</option>
+                            <option value="certificates">شهادة خريج / دبلوم تدريبي / عضوية سفراء الوعي</option>
                             <option value="partners">اعتماد شريك / مدرب دولي</option>
-                            <option value="ambassadors">بطاقة عضوية سفراء الوعي</option>
                         </select>
                     </div>
-                    <div>
-                        <label class="block text-xs font-bold text-slate-700 mb-1">الرقم المرجعي (Reference ID):</label>
-                        <input type="text" name="code" placeholder="مثال: ICE-2026-8891" required class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:outline-none focus:border-blue-800">
-                    </div>
                     <button type="submit" class="w-full metallic-gold-bg py-3 rounded-xl font-black text-sm shadow-md">
-                        <i class="fa-solid fa-magnifying-glass ml-1"></i> فحص وتوثيق الآن
+                        <i class="fa-solid fa-magnifying-glass ml-1"></i> الانتقال إلى بوابة الفحص والتوثيق
                     </button>
                 </form>
-                <div class="mt-4 pt-3 border-t border-slate-200 flex justify-between text-xs text-slate-500">
-                    <span>جرب كود شهادة: <code class="text-royal-navy font-bold">ICE-2026-8891</code></span>
-                    <span>كود شريك: <code class="text-amber-700 font-bold">PARTNER-ARABPTC</code></span>
-                </div>
             </div>
         </div>
     </div>
@@ -205,8 +211,10 @@
 <!-- Overview Cards linking to subpages -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div class="text-center max-w-2xl mx-auto mb-12">
-        <h2 class="text-2xl sm:text-3xl font-black text-royal-navy mb-3">أقسام وبوابات الكلية</h2>
-        <p class="text-slate-600 text-sm">تصفح الصفحات المتخصصة للكلية للتعرف على الحوكمة الأكاديمية، البرامج التدريبية، والمبادرات الدولية</p>
+        <h2 class="text-2xl sm:text-3xl font-black text-royal-navy mb-3">
+            أقسام وبوابات <span class="nowrap-phrase">كلية ريادة الأعمال الدولية</span>
+        </h2>
+        <p class="text-slate-600 text-sm">تصفح الصفحات المتخصصة للتعرف على الحوكمة الأكاديمية، البرامج التدريبية، والمبادرات الدولية</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Card 1 -->
@@ -263,10 +271,10 @@
         <!-- Col 1 -->
         <div>
             <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-lg metallic-gold-bg flex items-center justify-center font-black text-lg text-royal-navy">I.C.E</div>
+                <img src="logo.png" alt="شعار كلية ريادة الأعمال الدولية" class="w-12 h-12 rounded-full border border-amber-400 bg-white p-0.5 shrink-0">
                 <div>
-                    <div class="font-black text-white text-base">كلية ريادة الأعمال</div>
-                    <div class="text-xs metallic-gold-text font-bold">الدولية - إسطنبول</div>
+                    <div class="font-bold text-slate-200 text-xs">كلية</div>
+                    <div class="text-sm sm:text-base metallic-gold-text font-black nowrap-phrase">ريادة الأعمال الدولية</div>
                 </div>
             </div>
             <p class="text-xs leading-relaxed text-slate-400 mb-4">
@@ -315,7 +323,7 @@
         </div>
     </div>
     <div class="bg-black/40 py-4 text-center text-xs text-slate-400 border-t border-blue-900/50">
-        جميع الحقوق محفوظة © 2026 كلية ريادة الأعمال الدولية (I.C.E) - إسطنبول.
+        جميع الحقوق محفوظة © 2026 <span class="nowrap-phrase">كلية ريادة الأعمال الدولية</span> (I.C.E) - إسطنبول.
     </div>
 </footer>
 </html>
