@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية | كلية ريادة الأعمال الدولية (I.C.E) - إسطنبول</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+            color: #1e293b;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .bg-royal-navy {
+            background-color: #1e3a8a;
+        }
+        .bg-royal-navy-dark {
+            background-color: #112255;
+        }
+        .text-royal-navy {
+            color: #1e3a8a;
+        }
+        /* Metallic Gold Sheen */
+        .metallic-gold-bg {
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #D4AF37 50%, #FBF5B7 75%, #AA771C 100%);
+            background-size: 200% auto;
+            color: #112255;
+            transition: all 0.4s ease;
+        }
+        .metallic-gold-bg:hover {
+            background-position: right center;
+            box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.5);
+            transform: translateY(-2px);
+        }
+        .metallic-gold-text {
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #D4AF37 50%, #FBF5B7 75%, #AA771C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+        .metallic-gold-border {
+            border-image: linear-gradient(135deg, #BF953F, #FCF6BA, #D4AF37, #AA771C) 1;
+        }
+        .gold-top-card {
+            border-top: 4px solid #D4AF37;
+            background: linear-gradient(180deg, #fdfbfb 0%, #ebedee 100%);
+        }
+        .nav-link-active {
+            border-bottom: 3px solid #D4AF37;
+            color: #FCF6BA !important;
+            font-weight: 700;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            .print-only { display: block !important; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="bg-royal-navy text-white sticky top-0 z-50 shadow-xl border-b-2 border-amber-500/40 no-print">
+    <!-- Top Legal & Quick Bar -->
+    <div class="bg-royal-navy-dark text-xs py-2 px-4 border-b border-blue-900">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4 text-slate-300">
+                <span><i class="fa-solid fa-building-columns text-amber-400 ml-1"></i> إسطنبول، تركيا | ترخيص تجاري: <strong class="text-white">368979-5</strong></span>
+                <span class="hidden md:inline">|</span>
+                <span class="hidden md:inline">MERSİS: <strong class="text-amber-300">0336-1189-1980-0001</strong></span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="verify.html" class="text-amber-300 hover:underline font-semibold"><i class="fa-solid fa-certificate ml-1"></i> التحقق السريع من الشهادات</a>
+                <span>|</span>
+                <a href="verify.html?tab=partners" class="text-slate-300 hover:text-white"><i class="fa-solid fa-handshake ml-1"></i> التحقق من الشركاء</a>
+            </div>
+        </div>
+    </div>
+    <!-- Main Navigation -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-3 group">
+            <div class="w-12 h-12 rounded-xl metallic-gold-bg flex items-center justify-center shadow-lg font-black text-xl text-royal-navy">
+                I.C.E
+            </div>
+            <div class="leading-tight">
+                <div class="text-lg md:text-xl font-black tracking-wide text-white">كلية ريادة الأعمال</div>
+                <div class="text-xs md:text-sm metallic-gold-text font-bold">الدولية - إسطنبول | I.C.E</div>
+            </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-2">
+            <a href="index.html" class="px-3 py-2 text-sm lg:text-base transition nav-link-active">الرئيسية</a>
+<a href="about.html" class="px-3 py-2 text-sm lg:text-base transition text-slate-200 hover:text-amber-300">عن الكلية والحوكمة</a>
+<a href="programs.html" class="px-3 py-2 text-sm lg:text-base transition text-slate-200 hover:text-amber-300">الدبلومات والبرامج</a>
+<a href="initiatives.html" class="px-3 py-2 text-sm lg:text-base transition text-slate-200 hover:text-amber-300">مبادرة سفراء الوعي</a>
+<a href="verify.html" class="px-3 py-2 text-sm lg:text-base transition text-slate-200 hover:text-amber-300">بوابة التحقق والشهادات</a>
+<a href="contact.html" class="px-3 py-2 text-sm lg:text-base transition text-slate-200 hover:text-amber-300">تواصل معنا</a>
+
+        </nav>
+        <div class="hidden sm:flex items-center gap-3">
+            <a href="verify.html" class="metallic-gold-bg px-4 py-2 rounded-lg font-extrabold text-sm shadow-md flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved"></i> بوابة التحقق
+            </a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="lg:hidden text-amber-300 text-2xl focus:outline-none">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-royal-navy-dark px-4 pt-2 pb-4 space-y-2 border-t border-blue-800">
+        <a href="index.html" class="block py-2 text-white border-b border-blue-900">الرئيسية</a>
+        <a href="about.html" class="block py-2 text-white border-b border-blue-900">عن الكلية والحوكمة</a>
+        <a href="programs.html" class="block py-2 text-white border-b border-blue-900">الدبلومات والبرامج</a>
+        <a href="initiatives.html" class="block py-2 text-white border-b border-blue-900">مبادرة سفراء الوعي</a>
+        <a href="verify.html" class="block py-2 text-amber-300 font-bold border-b border-blue-900">بوابة التحقق والشهادات</a>
+        <a href="contact.html" class="block py-2 text-white">تواصل معنا</a>
+    </div>
+</header>
+
+
+<!-- Hero Section -->
+<section class="bg-royal-navy text-white py-16 lg:py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-950 border border-amber-400/50 text-amber-300 text-xs font-bold">
+                <i class="fa-solid fa-award"></i> صرح أكاديمي دولي مرخص رسمياً في إسطنبول - رقم السجل: 368979-5
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-black leading-tight">
+                نصنع قادة المستقبل في<br>
+                <span class="metallic-gold-text">كلية ريادة الأعمال الدولية</span>
+            </h1>
+            <p class="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl">
+                بإشراف رئيس مجلس الأمناء <span class="metallic-gold-text font-bold">الاستشاري الدكتور شجاع الفهد</span>، نقدم برامج دبلوم مهنية متقدمة تجمع بين التأصيل العلمي والتطبيق العملي، مع نظام توثيق وتحقق رقمي دولي لكافة الشهادات والشراكات.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="programs.html" class="metallic-gold-bg px-7 py-3.5 rounded-xl font-black text-base shadow-lg flex items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap"></i> استكشف الدبلومات المهنية
+                </a>
+                <a href="verify.html" class="bg-white/10 hover:bg-white/20 border border-amber-400/60 text-white px-7 py-3.5 rounded-xl font-bold text-base transition flex items-center gap-2">
+                    <i class="fa-solid fa-qrcode text-amber-300"></i> التحقق من الشهادات والاعتمادات
+                </a>
+            </div>
+        </div>
+        <!-- Quick Verification Widget on Home Page -->
+        <div class="lg:col-span-5">
+            <div class="bg-white text-slate-800 rounded-2xl shadow-2xl p-6 border-t-4 border-amber-500">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-black text-lg text-royal-navy"><i class="fa-solid fa-shield-check text-amber-600 ml-2"></i> نافذة التحقق السريع</h3>
+                    <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">متصل بقاعدة البيانات</span>
+                </div>
+                <p class="text-xs text-slate-600 mb-4">أدخل الرقم المرجعي للشهادة أو كود الشريك للانتقال المباشر إلى صفحة التوثيق الرسمية:</p>
+                <form action="verify.html" method="get" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">نوع الوثيقة:</label>
+                        <select name="tab" class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:outline-none focus:border-blue-800">
+                            <option value="certificates">شهادة خريج / دبلوم تدريبي</option>
+                            <option value="partners">اعتماد شريك / مدرب دولي</option>
+                            <option value="ambassadors">بطاقة عضوية سفراء الوعي</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">الرقم المرجعي (Reference ID):</label>
+                        <input type="text" name="code" placeholder="مثال: ICE-2026-8891" required class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:outline-none focus:border-blue-800">
+                    </div>
+                    <button type="submit" class="w-full metallic-gold-bg py-3 rounded-xl font-black text-sm shadow-md">
+                        <i class="fa-solid fa-magnifying-glass ml-1"></i> فحص وتوثيق الآن
+                    </button>
+                </form>
+                <div class="mt-4 pt-3 border-t border-slate-200 flex justify-between text-xs text-slate-500">
+                    <span>جرب كود شهادة: <code class="text-royal-navy font-bold">ICE-2026-8891</code></span>
+                    <span>كود شريك: <code class="text-amber-700 font-bold">PARTNER-ARABPTC</code></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
+    <div class="bg-white rounded-2xl shadow-xl p-6 grid grid-cols-2 lg:grid-cols-4 gap-6 border border-slate-200 text-center">
+        <div>
+            <div class="text-3xl font-black text-royal-navy">+5,000</div>
+            <div class="text-xs font-bold text-slate-500 mt-1">خريج ومتدرب موثق</div>
+        </div>
+        <div>
+            <div class="text-3xl font-black text-amber-600">+18</div>
+            <div class="text-xs font-bold text-slate-500 mt-1">برنامج ودبلوم تخصصي</div>
+        </div>
+        <div>
+            <div class="text-3xl font-black text-royal-navy">100%</div>
+            <div class="text-xs font-bold text-slate-500 mt-1">توثيق رقمي عبر QR & PDF</div>
+        </div>
+        <div>
+            <div class="text-3xl font-black text-amber-600">2022</div>
+            <div class="text-xs font-bold text-slate-500 mt-1">تأسيس وترخيص رسمي في إسطنبول</div>
+        </div>
+    </div>
+</section>
+
+<!-- Overview Cards linking to subpages -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-2xl sm:text-3xl font-black text-royal-navy mb-3">أقسام وبوابات الكلية</h2>
+        <p class="text-slate-600 text-sm">تصفح الصفحات المتخصصة للكلية للتعرف على الحوكمة الأكاديمية، البرامج التدريبية، والمبادرات الدولية</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="gold-top-card rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+                <div class="w-12 h-12 rounded-xl bg-royal-navy text-amber-300 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-landmark"></i>
+                </div>
+                <h3 class="font-black text-xl text-royal-navy mb-2">عن الكلية ومجلس الأمناء</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    تعرف على رؤية الكلية، كلمة رئيس مجلس الأمناء الاستشاري الدكتور شجاع الفهد، التراخيص القانونية في تركيا، والهيكل الإداري.
+                </p>
+            </div>
+            <a href="about.html" class="text-royal-navy font-extrabold text-sm hover:text-amber-700 flex items-center gap-2">
+                انتقل إلى صفحة الكلية <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="gold-top-card rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+                <div class="w-12 h-12 rounded-xl bg-royal-navy text-amber-300 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <h3 class="font-black text-xl text-royal-navy mb-2">الدبلومات المهنية المعتمدة</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    استعرض تفاصيل دبلوم البرمجة اللغوية العصبية (NLP) بمستوياته الثلاثة، دبلوم تحليل الشخصية بالأشكال الهندسية، وإعداد المدربين.
+                </p>
+            </div>
+            <a href="programs.html" class="text-royal-navy font-extrabold text-sm hover:text-amber-700 flex items-center gap-2">
+                تصفح كافة الدبلومات <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="gold-top-card rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+                <div class="w-12 h-12 rounded-xl bg-royal-navy text-amber-300 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-users-rays"></i>
+                </div>
+                <h3 class="font-black text-xl text-royal-navy mb-2">مبادرة سفراء الوعي</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    المبادرة التوعوية الرائدة بالتعاون مع المنصة العربية للتدريب والاستشارات (ARABPTC)، مع نظام إصدار والتحقق من بطاقات العضوية.
+                </p>
+            </div>
+            <a href="initiatives.html" class="text-royal-navy font-extrabold text-sm hover:text-amber-700 flex items-center gap-2">
+                اكتشف المبادرة والعضويات <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-royal-navy-dark text-slate-300 mt-auto border-t-4 border-amber-500 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Col 1 -->
+        <div>
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-lg metallic-gold-bg flex items-center justify-center font-black text-lg text-royal-navy">I.C.E</div>
+                <div>
+                    <div class="font-black text-white text-base">كلية ريادة الأعمال</div>
+                    <div class="text-xs metallic-gold-text font-bold">الدولية - إسطنبول</div>
+                </div>
+            </div>
+            <p class="text-xs leading-relaxed text-slate-400 mb-4">
+                مؤسسة تعليمية وتدريبية دولية مرخصة رسمياً في الجمهورية التركية، تُعنى بتأهيل القيادات ورواد الأعمال وتقديم الدبلومات المهنية المعتمدة.
+            </p>
+            <div class="text-xs bg-blue-950/70 p-3 rounded-lg border border-blue-800 space-y-1">
+                <div class="text-amber-300 font-bold">البيانات القانونية الرسمية:</div>
+                <div>الاسم القانوني: ENTREPRENEURSHIP COLLEGE INT EĞİTİM HİZMETLERİ LİMİTED ŞİRKETİ</div>
+                <div>رقم السجل التجاري والترخيص: <strong class="text-white">368979-5</strong></div>
+                <div>رقم MERSİS: <strong class="text-white">0336-1189-1980-0001</strong></div>
+                <div>الرمز المهني NACE: <strong class="text-white">85.60.02</strong></div>
+            </div>
+        </div>
+        <!-- Col 2 -->
+        <div>
+            <h4 class="text-white font-bold text-base mb-4 border-r-4 border-amber-400 pr-3">خريطة صفحات الموقع</h4>
+            <ul class="space-y-2 text-sm">
+                <li><a href="index.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> الصفحة الرئيسية</a></li>
+                <li><a href="about.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> عن الكلية ومجلس الأمناء</a></li>
+                <li><a href="programs.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> الدبلومات المهنية المعتمدة</a></li>
+                <li><a href="initiatives.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> مبادرة سفراء الوعي</a></li>
+                <li><a href="verify.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> بوابة التحقق من الشهادات</a></li>
+                <li><a href="contact.html" class="hover:text-amber-300 transition"><i class="fa-solid fa-angle-left ml-1 text-amber-400"></i> المركز الإعلامي والتواصل</a></li>
+            </ul>
+        </div>
+        <!-- Col 3 -->
+        <div>
+            <h4 class="text-white font-bold text-base mb-4 border-r-4 border-amber-400 pr-3">أبرز الدبلومات</h4>
+            <ul class="space-y-2 text-sm">
+                <li><a href="programs.html#nlp" class="hover:text-amber-300 transition">دبلوم البرمجة اللغوية العصبية (NLP)</a></li>
+                <li><a href="programs.html#geometry" class="hover:text-amber-300 transition">تحليل أنماط الشخصية (الأشكال الهندسية)</a></li>
+                <li><a href="programs.html#tot" class="hover:text-amber-300 transition">دبلوم إعداد المدربين الدوليين (TOT)</a></li>
+                <li><a href="programs.html#hr" class="hover:text-amber-300 transition">دبلوم إدارة الموارد البشرية الحديثة</a></li>
+                <li><a href="programs.html#mba" class="hover:text-amber-300 transition">ريادة الأعمال والإدارة التنفيذية</a></li>
+            </ul>
+        </div>
+        <!-- Col 4 -->
+        <div>
+            <h4 class="text-white font-bold text-base mb-4 border-r-4 border-amber-400 pr-3">الإدارة والتنسيق</h4>
+            <p class="text-sm mb-3">رئيس مجلس الأمناء:<br><span class="metallic-gold-text text-base">الاستشاري الدكتور شجاع الفهد</span></p>
+            <p class="text-xs text-slate-400 mb-3">الشريك الاستراتيجي:<br><strong class="text-white">المنصة العربية للتدريب والاستشارات (ARABPTC)</strong></p>
+            <div class="space-y-2 text-xs text-slate-300">
+                <div><i class="fa-solid fa-location-dot text-amber-400 ml-2"></i> إسطنبول، الجمهورية التركية</div>
+                <div><i class="fa-solid fa-globe text-amber-400 ml-2"></i> ice-certificates.online</div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black/40 py-4 text-center text-xs text-slate-400 border-t border-blue-900/50">
+        جميع الحقوق محفوظة © 2026 كلية ريادة الأعمال الدولية (I.C.E) - إسطنبول.
+    </div>
+</footer>
+</html>
+
+</body>
